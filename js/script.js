@@ -2,7 +2,7 @@
 // Adiciona cada produto do banco de dados na tabela
 async function getProdutos() {
   try {
-    const response = await fetch('http://localhost:4000/product');
+    const response = await fetch('https://api-crudnodejs.vercel.app/product');
     const data = await response.json();
 
     const tableBody = document.getElementById('table-body');
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', getProdutos);
 
     const data = { produto, quantidade }; 
 
-    fetch('http://localhost:4000/product', {
+    fetch('https://api-crudnodejs.vercel.app/product', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', getProdutos);
   // ============================================
 // MODAL PARA DELETAR PRODUTOS ============================================
   function deletarProduto(idProduto) {
-    fetch(`http://localhost:4000/product/${idProduto}`, {
+    fetch(`https://api-crudnodejs.vercel.app/${idProduto}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', getProdutos);
       console.log('Novo Produto:', novoProduto); // Verifica se os novos valores estão corretos
       console.log('Nova Quantidade:', novaQuantidade);
   
-      fetch(`http://localhost:4000/product/${_id}`, {
+      fetch(`https://api-crudnodejs.vercel.app/product/${_id}`, {
         method: 'PATCH', // Use PUT ou PATCH conforme apropriado para sua API
         headers: {
           'Content-Type': 'application/json'
