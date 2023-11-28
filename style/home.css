@@ -1,0 +1,181 @@
+.input-pesquisa
+{
+  width: 100%;
+  height: 30vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+.input-pesquisa input
+{
+  height:  4rem;
+  width: 40%;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+
+  font-size: 20px;
+  padding-left: 30px;
+  
+  border: none;
+  outline: none;
+}
+
+
+.input-pesquisa button 
+{
+  height:  4rem;
+  width:  4rem;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+
+  border: none;
+  outline: none;
+}
+
+
+/* ------------------------------------------------ FAIXA INFORMAÇÔES */
+.produto-faixa 
+{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+
+
+}
+
+
+
+.container-control
+{
+
+  width: 70%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+/* 
+  background-color: rgb(95, 136, 122); */
+}
+
+
+
+
+.container-control .control-produto
+{
+ display: flex;
+ gap: 40px;
+}
+
+
+.produto-faixa .container-control button
+{
+  height:  4rem;
+  width:  4rem;
+}
+
+.button-add
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button-add button svg
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.main-right
+{
+  /* background-color: aquamarine; */
+}
+
+.container-table
+{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+
+.container-table table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: #fff;
+
+}
+.container-table table th, td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: left;
+  border-radius: 20px;
+
+}
+.container-table table th {
+  border-radius: 20px;
+  
+}
+.container-table table thead {
+  position: sticky;
+  top: 0;
+  border-radius: 20px;
+
+}
+.container-control {
+  margin: 0 auto;
+
+}
+.control-produto {
+  display: flex;
+  gap: 10px;
+
+}
+#loading
+{
+  display: none;
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+}

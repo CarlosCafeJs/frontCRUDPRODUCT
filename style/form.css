@@ -1,0 +1,68 @@
+
+.geral-page .form-cadastro form 
+{
+  width:60vh ;
+  height:80vh ;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 1em;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.geral-page .form-cadastro form label
+{
+  width:70%;
+  height:20px ;
+  
+  text-align: start ;
+  font-size: 16px;
+}
+
+
+.geral-page .form-cadastro form input
+{
+  width:15em;
+  height:48px;
+  
+  font-size: large;
+  
+
+  border-radius: 1em;
+ 
+  padding: 1em;
+  border: 1px solid #4b5a68 ;
+  outline: none;
+}
+
+.geral-page .form-cadastro form input:focus
+{
+  border: 2px solid rgb(0, 0, 0) ;
+}
+
+.geral-page .form-cadastro form input::placeholder
+{
+  color: rgb(179, 179, 179);
+  font-size: 14px;
+}
+
+.geral-page .form-cadastro form img
+{
+  width: 70%;
+  padding-bottom: 20px;
+}
+
+.geral-page .form-cadastro form button
+{
+  margin-top: 20px;
+  padding: 1em;
+  border-radius: 1em;
+  outline: none;
+  color: #fff;
+  background-color: #00B3BE;
+}

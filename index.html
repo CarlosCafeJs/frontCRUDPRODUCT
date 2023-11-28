@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/home.css">
+  <title>Papelaria Home</title>
+</head>
+<body>
+
+  <main>
+    <div class="main-geral">
+          <!-- BUTTON ADD E PESQUISA-->
+      <div class="main-right">
+              <div class="input-pesquisa">
+                <input type="text">
+                <button><svg width="46" height="46" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M51.4333 55.75L32.0083 36.325C30.4667 37.5583 28.6937 38.5347 26.6896 39.2542C24.6854 39.9736 22.5528 40.3333 20.2917 40.3333C14.6903 40.3333 9.94965 38.3934 6.06979 34.5135C2.18993 30.6337 0.25 25.8931 0.25 20.2917C0.25 14.6903 2.18993 9.94965 6.06979 6.06979C9.94965 2.18993 14.6903 0.25 20.2917 0.25C25.8931 0.25 30.6337 2.18993 34.5135 6.06979C38.3934 9.94965 40.3333 14.6903 40.3333 20.2917C40.3333 22.5528 39.9736 24.6854 39.2542 26.6896C38.5347 28.6937 37.5583 30.4667 36.325 32.0083L55.75 51.4333L51.4333 55.75ZM20.2917 34.1667C24.1458 34.1667 27.4219 32.8177 30.1198 30.1198C32.8177 27.4219 34.1667 24.1458 34.1667 20.2917C34.1667 16.4375 32.8177 13.1615 30.1198 10.4635C27.4219 7.76563 24.1458 6.41667 20.2917 6.41667C16.4375 6.41667 13.1615 7.76563 10.4635 10.4635C7.76563 13.1615 6.41667 16.4375 6.41667 20.2917C6.41667 24.1458 7.76563 27.4219 10.4635 30.1198C13.1615 32.8177 16.4375 34.1667 20.2917 34.1667Z" fill="#192E41"/>
+                  </svg>
+                  </button>
+              </div>
+            </div>
+             
+              <div class="container-table">
+                <div class="button-add">
+                  <button onclick="abrirModal()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="46" viewBox="0 -960 960 960" width="46"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
+                  </button>
+                </div>
+                    <!-- LOADING-->
+                <div id="loading">Carregando...</div>
+
+    <!-- TABELA DE PRODUTOS COM INSERÇÃO DINAMICA-->
+              <table>
+                
+                <thead>
+                  <tr>
+                    <th>PRODUTOS</th>
+                    <th>QUANTIDADES</th>
+                    <th>CONTROLES</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                  <tr>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+              <div id="modalCadastro" class="modal">
+    <div class="modal-content">
+     
+
+    <!-- Modal de Cadastrp -->
+      <h2>Adicionar Produto</h2>
+      <form id="formProduto">
+        <label for="produto">Produto:</label>
+        <input type="text" id="produto" name="produto" required><br><br>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required><br><br>
+        <button type="submit">Adicionar</button>
+      </form>
+      <span onclick="fecharModal()" style="float: right;">&times;</span>
+    </div>
+  </div>
+
+   <!-- Modal de Edição -->
+<div id="modalEdicao" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModalEdicao()">&times;</span>
+    <h2>Editar Produto</h2>
+    <form id="formEdicao">
+      <label for="produtoEdit">Produto:</label>
+      <input type="text" id="produtoEdit" name="produtoEdit"><br><br>
+      <label for="quantidadeEdit">Quantidade:</label>
+      <input type="text" id="quantidadeEdit" name="quantidadeEdit"><br><br>
+      <button type="button" id="salvarAlteracoesBtn">Salvar Alterações</button>
+      <button type="button" id="cancelarEdicaoBtn">Cancelar</button>
+    </form>
+  </div>
+      </main>
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
